@@ -7,30 +7,30 @@
     </title>
     <body>
     
-        <div class="header">
             <h1> Alan's Journal Entries </h1>
-        </div>
         <div class="header">
-        <b> Journal Entry 1 (4/8/2021): Tough Schedule Ahead  </b> 
+            <b class = "header"> Journal Entry 1 (4/8/2021): Tough Schedule Ahead  </b> 
+        </div>
+        <div class="box1">
                     <ol>
-                        <li> 
+                        <li class = bulletPoint> 
                             <i> Morning (Lowlight) </i> 🌄
                             <p> Today is Friday April 8th 2021, my toughest day of the week today as I have both a research meeting and two 1 hour 20 min class blocks in CSE 110 and CSE 190. </p>
                             <p> Full day means no breakfast sadly </p>
                         </li>
-                        <li>
-                            <i> Afternoon (Highlight) </i> 🌅
+                        <li class = bulletPoint>
+                            <i > Afternoon (Highlight) </i> 🌅
                             <p> Though it is work, my research meetings are pretty pleasent as I have a fun and cooperative team. We talked about courses, waitlists, our break,
                                 and next steps for our project. I am tasked with wireframing the mental health screening page and creating the CSS guidelines. 
                             </p>
                         </li>
-                        <li> 
+                        <li class = bulletPoint> 
                             <i> Evening (Lowlight and Highlight) </i> 🌃
                             <p> Unfortunately missed a lecture due to fatigue. Will have to watch the recording in prepartion for the quiz. Ate some late night sushi at Del Sushi in La Jolla, the lady that runs 
                                 the establishment always brightens my mood 
                             </p>
                         </li>
-                        <li> 
+                        <li class = bulletPoint> 
                             
                             <i> Task list for Tomorrow </i> 📝
                             <ol start = "1">
@@ -41,18 +41,21 @@
                             </ol>
 
 
-                        <li> Image of the Day </li>
+                        <li class = bulletPoint> 
+                            <i>Image of the Day </i>
+                        </li>
                         
                     </ol>
 
                         <img src = "images/Thursday.PNG" alt = "Wireframe is looking pretty good">
 
                         <ol start = "6">
-                        <li> Song of the Day </li>
+                        <li class = bulletPoint>
+                            <i> Song of the Day </i>
+                        </li>
                     </ol>
                         <audio controls src = "audio/ThursdaySong.mp3"> </audio>
-            </div>
-
+        </div>
 
             <b> Journal Entry 2 (4/9/2021): It's An Easy Day!  </b>
                     <ol>
@@ -130,10 +133,11 @@
 
         
         
-        <div class = useless2> </div>
+        <div class = display1> 
             <label for="name">Enter your journal entry:</label><br><br>
             <input type="text" id="name" name="name" size="70" placeholder = " TItle of Journal Entry #...">
             <textarea style="height:200px;font-size:14pt;" rows="4" cols="50" placeholder = " Journal Entry Contents"> </textarea> <br><br>
+        </div>
 
         <label for="browser">Choose the day from the list:</label>
         <input list="browsers" name="browser" id="browser">
