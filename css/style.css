@@ -3,11 +3,6 @@
 	margin-top: 2em;
 }
 
-/* applies to any <p> descendants of an element of class "example-class-selector" */
-.example-class-selector p {
-	/* Colors are in hexadecimal: http://www.colorpicker.com/ */	
-	color: #CC00AA;
-}
 
 body {
     background-color: wheat;
@@ -17,8 +12,12 @@ h1 {
     font-size: 4em; /* relative sizing (1) */
 }
 
+p {
+    font-size: mm; /* absolute sizing (3) */
+}
+
 .header b{
-    font-size: 3.5ch; /*relative sizing (2) */
+    font-size: 30pt; /*relative sizing (2) */
 }
 
 .box1 {
@@ -28,6 +27,29 @@ h1 {
     color: #fff;
   } 
 
+  .box2 {
+    background-color: #ffd2f7;
+    box-sizing: border-box;
+    width: 1750px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 80px;
+    padding-right: 60px;
+    border: 10px solid #FF00FF;
+    margin: 10px;
+  } 
+
   .bulletPoint i {
       font-size: 25px; /*absolute sizing (1) */
   }
+
+  .header2 b{
+      font-size: 2vw; /*relative sizing(2) */
+
+  }
+
+  .header3 b{
+    font-size: 5vh; /*relative sizing(3) */
+
+}
+
