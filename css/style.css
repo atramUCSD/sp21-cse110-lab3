@@ -13,7 +13,9 @@ body {
     max-width:fit-content; /* size constraint for web responsive pages */
 }
 
-h1 {
+
+/*selector list */
+h1,h2 {
     font-size: 35px; /* absolute sizing (1) */
     text-align: center; /*styled text(1) */
     color: hotpink; /* style text (2) */
@@ -52,6 +54,8 @@ p {
       display: block; /* display requirement (1) */
       font-family: 'zantrokeregular', serif;
   }
+
+  .modal.modal-red { border-color: red; }
 
   .bulletPoint2 i{
     font-size: 25px;
@@ -128,3 +132,23 @@ img.sticky {
     font-size: 4mm;
     color: orchid;
   }
+  
+
+  /* universal selector */
+  div *:active{
+      color:yellow;
+  }
+
+  [title~=image]:hover {
+    border: 5px solid yellow;
+  }
+
+  /* child selector */
+  div > p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  
+  div + p {
+    font-family: 'Courier New', Courier, monospace;
+  }
+
