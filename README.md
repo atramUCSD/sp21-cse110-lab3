@@ -1,2 +1,3 @@
-# sp21-cse110-lab3-2-
+# sp21-cse110-lab3
+https://atramucsd.github.io/sp21-cse110-lab3/
 
