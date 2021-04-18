@@ -14,7 +14,7 @@ body {
 }
 
 h1 {
-    font-size: 4em; /* relative sizing (1) */
+    font-size: 35px; /* absolute sizing (1) */
     text-align: center; /*styled text(1) */
     color: hotpink; /* style text (2) */
     text-decoration:underline overline; /*style text(3) */
@@ -25,7 +25,7 @@ p {
 }
 
 .header b{
-    font-size: 30pt; /*relative sizing (2) */
+    font-size: 3em; /*relative sizing (2) */
 }
 
 .box1 {
@@ -48,8 +48,9 @@ p {
   } 
 
   .bulletPoint i {
-      font-size: 25px; /*absolute sizing (1) */
+      font-size: 2em; /*relative sizing (1) */
       display: block; /* display requirement (1) */
+      font-family: 'zantrokeregular', serif;
   }
 
   .bulletPoint2 i{
@@ -67,3 +68,63 @@ p {
 
 }
 
+img.static{
+    position: static;
+}
+
+img.sticky {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    width: 100px;
+    top: 0px;
+    left: 5000px;
+    opacity: 30%;
+  }
+
+  @font-face {
+    font-family: 'zantrokeregular';
+    src: url('fonts/zantroke-webfont.woff2') format('woff2'),
+}
+
+/* flex container req */
+.flex-container {
+    display:flexbox;
+    flex-direction: column;
+    background-color: olive;
+}
+
+/* grid container req */
+.grid-container {
+    display:grid;
+    grid-column-gap: 25px;
+    background-color: olivedrab;
+
+}
+
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+  }
+
+/* added pseudo class es*/
+
+  label {
+      opacity: 0.5;
+  }
+
+  label:hover {
+      opacity: 1.0;
+  }
+
+  p:active {
+      background-color: orange;
+  }
+
+  #p2 {
+    font-size: 4mm;
+    color: orchid;
+  }
